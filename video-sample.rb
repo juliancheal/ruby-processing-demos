@@ -19,6 +19,7 @@ class VideoTest < Processing::App
  
   def draw
     tint(*Array.new(3) { rand(256) })
+    movie_event(@movie)
     image(@movie, 0,0)
   end
  
